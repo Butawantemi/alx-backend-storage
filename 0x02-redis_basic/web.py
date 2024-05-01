@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Implementing an expiring web cache and tracker """
+""" implementing an expiring web cache and tracker """
 
 
 import redis
@@ -30,7 +30,7 @@ def track_get_page(fn: Callable) -> Callable:
 @track_get_page
 def get_page(url: str) -> str:
     """
-    Http request
+    HTTS request
     """
     response = requests.get(url)
     return response.text
